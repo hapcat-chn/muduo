@@ -1,0 +1,15 @@
+---- weak_ptr Matches (14 in 7 files) ----
+BackendSession::Request in balancer.cc (examples\protobuf\rpcbalancer) :     std::weak_ptr<TcpConnection> clientConn;
+BackendSession::Request in balancer_raw.cc (examples\protobuf\rpcbalancer) :     std::weak_ptr<TcpConnection> clientConn;
+muduo::net::Channel in Channel.h (muduo\net) :   std::weak_ptr<void> tie_;
+EchoServer in echo.h (examples\idleconnection) :   typedef std::weak_ptr<muduo::net::TcpConnection> WeakTcpConnectionPtr;
+EchoServer in echo.h (examples\idleconnection) :   typedef std::weak_ptr<Entry> WeakEntryPtr;
+EchoServer in sortedlist.cc (examples\idleconnection) :   typedef std::weak_ptr<TcpConnection> WeakTcpConnectionPtr;
+Tunnel::setup in tunnel.h (examples\socks4a) :                   std::weak_ptr<Tunnel>(shared_from_this()), kServer, _1, _2),
+Tunnel::onClientConnection in tunnel.h (examples\socks4a) :                     std::weak_ptr<Tunnel>(shared_from_this()), kClient, _1, _2),
+Tunnel::onHighWaterMark in tunnel.h (examples\socks4a) :                       std::weak_ptr<Tunnel>(shared_from_this()), kServer, _1));
+Tunnel::onHighWaterMark in tunnel.h (examples\socks4a) :                       std::weak_ptr<Tunnel>(shared_from_this()), kClient, _1));
+Tunnel in tunnel.h (examples\socks4a) :   static void onHighWaterMarkWeak(const std::weak_ptr<Tunnel>& wkTunnel,
+Tunnel in tunnel.h (examples\socks4a) :   static void onWriteCompleteWeak(const std::weak_ptr<Tunnel>& wkTunnel,
+muduo::WeakCallback in WeakCallback.h (muduo\base) :   WeakCallback(const std::weak_ptr<CLASS>& object,
+muduo::WeakCallback in WeakCallback.h (muduo\base) :   std::weak_ptr<CLASS> object_;
